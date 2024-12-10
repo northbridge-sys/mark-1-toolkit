@@ -37,9 +37,9 @@ mk1PCI_Send(
     list parameters,
     string data
     )
-{ // sends an IMP message via PCI
+{ // sends an LEP message via PCI
 	parameters = ["_pci", device, target] + parameters;
-    xiIMP_Send( // sends an IMP message
+    xiLEP_Send( // sends an LEP message
         "", // prim
         "_fw:pci", // target
         0, // signed

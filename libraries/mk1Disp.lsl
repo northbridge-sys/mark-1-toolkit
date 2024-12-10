@@ -33,7 +33,7 @@
         https://mark1.northbridgesys.com/en/technical-reference/bios/display
 
     If MK1_DISP_USE_INFO is defined, these functions will be aware of the size of
-    the display, as long as you call mk1Disp_ReqInfo(...) and, when you get an IMP
+    the display, as long as you call mk1Disp_ReqInfo(...) and, when you get an LEP
     response, mk1Disp_LoadInfo(...).  This allows negative-indexed positioning via
     mk1Disp_Op(...) and creates the MK1_DISP_TYPE, MK1_DISP_ROWS, MK1_DISP_COLS, and
     MK1_DISP_MONO globals for software use.
@@ -75,7 +75,7 @@ integer MK1_DISP_MONO;
 
 mk1Disp_ReqInfo(integer ident)
 { // requests display info
-    xiIMP_Send( // sends an IMP message
+    xiLEP_Send( // sends an LEP message
         "",
         "_fw:disp",
         0, // signed
@@ -96,7 +96,7 @@ mk1Disp_LoadInfo(string data)
 
 mk1Disp_Reset(integer ident, integer flags)
 { // resets the Mark 1 display using D_RESET_* flag(s)
-    xiIMP_Send( // sends an IMP message
+    xiLEP_Send( // sends an LEP message
         "",
         "_fw:disp",
         0, // signed
@@ -124,7 +124,7 @@ string mk1Disp_Op(integer row, integer col, string mode, integer flags, string p
 
 mk1Disp(integer ident, list ops)
 { // sends multiple ops at once, use mk1Disp_Op(...) to generate each in ops list
-    xiIMP_Send( // sends an IMP message
+    xiLEP_Send( // sends an LEP message
         "",
         "_fw:disp",
         0, // signed
@@ -137,7 +137,7 @@ mk1Disp(integer ident, list ops)
 
 mk1Disp_Background(integer ident, integer layer, string data)
 { // sets a background layer
-    xiIMP_Send( // sends an IMP message
+    xiLEP_Send( // sends an LEP message
         "",
         "_fw:disp",
         0, // signed
@@ -150,7 +150,7 @@ mk1Disp_Background(integer ident, integer layer, string data)
 
 mk1Disp_Foreground(integer ident, integer layer, string data)
 { // sets a foreground layer
-    xiIMP_Send( // sends an IMP message
+    xiLEP_Send( // sends an LEP message
         "",
         "_fw:disp",
         0, // signed

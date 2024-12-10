@@ -33,7 +33,7 @@
 
 mk1RAM_Info(integer ident)
 {
-    xiIMP_Send( // request RAM statistics
+    xiLEP_Send( // request RAM statistics
         "", // prim
         "_fw:ram", // target
         0, // signed
@@ -46,7 +46,7 @@ mk1RAM_Info(integer ident)
 
 mk1RAM_Alloc(integer ident)
 {
-    xiIMP_Send( // request RAM statistics
+    xiLEP_Send( // request RAM statistics
         "", // prim
         "_fw:ram", // target
         0, // signed
@@ -59,7 +59,7 @@ mk1RAM_Alloc(integer ident)
 
 mk1RAM_Free(integer ident, integer bank)
 {
-    xiIMP_Send( // request RAM statistics
+    xiLEP_Send( // request RAM statistics
         "", // prim
         "_fw:ram", // target
         0, // signed

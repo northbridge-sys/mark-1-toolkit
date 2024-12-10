@@ -27,7 +27,7 @@
     └──────────────────────────────────────────────────────────────────────────────┘
 
     Flags and helper function for the Multiple Interval Timer, an interface that
-    responds with an IMP message after a specified time.  This allows scripts to
+    responds with an LEP message after a specified time.  This allows scripts to
     effectively run multiple llSetTimerEvent-like timers, albeit with low precision.
 */
 
@@ -37,7 +37,7 @@
 
 mk1MIT(integer mode, float time, integer ident, string callback)
 {
-    xiIMP_Send( // sends an IMP message
+    xiLEP_Send( // sends an LEP message
         "",
         "_fw:mit",
         0, // signed
