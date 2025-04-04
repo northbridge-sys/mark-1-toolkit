@@ -24,7 +24,7 @@ TBD
 - Include the framework libraries by placing the following line at the top of your script:
 
 ```
-#include "northbridge-business-systems/mk1-lsl-toolkit/libraries.lsl"
+#include "northbridge-sys/mk1-lsl-toolkit/libraries.lsl"
 ```
 
 ## Function Reference

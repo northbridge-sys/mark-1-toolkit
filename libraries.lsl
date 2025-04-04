@@ -21,7 +21,7 @@
     with this script.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1Disp.lsl"
-#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1MIT.lsl"
-#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1PCI.lsl"
-#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1RAM.lsl"
+#include "northbridge-sys/mk1-lsl-toolkit/libraries/mk1Disp.lsl"
+#include "northbridge-sys/mk1-lsl-toolkit/libraries/mk1MIT.lsl"
+#include "northbridge-sys/mk1-lsl-toolkit/libraries/mk1PCI.lsl"
+#include "northbridge-sys/mk1-lsl-toolkit/libraries/mk1RAM.lsl"
