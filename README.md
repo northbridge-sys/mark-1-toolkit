@@ -19,12 +19,12 @@ TBD
 ## Instructions
 
 - If you haven't, enable the LSL preprocessor in your viewer and set the directory where the LSL preprocessor will check for include files.
-- Create a directory called `nbs-mk1-libraries` in your LSL preprocessor include directory.
-- Unpack the repository into the `nbs-mk1-libraries`, so that `libraries.lsl` is located in `[preprocessor directory]/nbs-mk1-libraries/libraries.lsl`.
+- Create a directory called `northbridge-business-systems`/`mk1-lsl-toolkit` in your LSL preprocessor include directory.
+- Unpack the repository into the `mk1-lsl-toolkit`, so that `libraries.lsl` is located in `[preprocessor directory]/northbridge-business-systems/mk1-lsl-toolkit/libraries.lsl`.
 - Include the framework libraries by placing the following line at the top of your script:
 
 ```
-#include "nbs-mk1-libraries/libraries.lsl"
+#include "northbridge-business-systems/mk1-lsl-toolkit/libraries.lsl"
 ```
 
 ## Function Reference

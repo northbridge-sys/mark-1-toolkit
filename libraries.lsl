@@ -1,8 +1,7 @@
 /*
-    main.lsl
-    Mk1 Dev Library
-    Revision 0
-    Copyright (C) 2024  Northbridge Business Systems
+    libraries.lsl
+    Mk1 LSL Toolkit
+    Copyright (C) 2025  Northbridge Business Systems
     https://mark1.northbridgesys.com
 
     ╒══════════════════════════════════════════════════════════════════════════════╕
@@ -20,21 +19,9 @@
 
     You should have received a copy of the GNU Lesser General Public License along
     with this script.  If not, see <https://www.gnu.org/licenses/>.
-
-    ╒══════════════════════════════════════════════════════════════════════════════╕
-    │ INSTRUCTIONS                                                                 │
-    └──────────────────────────────────────────────────────────────────────────────┘
-
-    This file #includes all existing Mk1 dev library scripts. Type the following:
-		#include "nbs-mk1-libraries/libraries.lsl"
-    into the top of an LSL script with the LSL preprocessor enabled to be able to
-    call Mk1 dev library functions.
-
-    Make sure the "Script optimizer" setting is enabled in your preprocessor,
-    otherwise the entire contents of the dev library will be added to your script!
 */
 
-#include "nbs-mk1-libraries/libraries/mk1Disp.lsl"
-#include "nbs-mk1-libraries/libraries/mk1MIT.lsl"
-#include "nbs-mk1-libraries/libraries/mk1PCI.lsl"
-#include "nbs-mk1-libraries/libraries/mk1RAM.lsl"
+#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1Disp.lsl"
+#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1MIT.lsl"
+#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1PCI.lsl"
+#include "northbridge-business-systems/mk1-lsl-toolkit/libraries/mk1RAM.lsl"
